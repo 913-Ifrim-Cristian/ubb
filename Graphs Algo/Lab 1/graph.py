@@ -2,6 +2,7 @@ from exceptions import *
 from random import randrange
 from copy import deepcopy
 
+
 class Graph:
 
     def __init__(self, n=0, m=0):

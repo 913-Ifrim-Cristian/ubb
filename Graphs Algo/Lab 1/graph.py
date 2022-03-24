@@ -36,6 +36,9 @@ class Graph:
         """
         Returns an iterator to the set of vertices.
         """
+        if len(self.__vertices) == 0:
+            raise EdgeError("ERROR: The graph does not have any vertices!")
+
         for vertex in self.__vertices:
             yield vertex
 
@@ -44,7 +47,7 @@ class Graph:
         Returns an iterator to the set of (outbound) neighbours of a vertex.
         """
         if not self.is_vertex(vertex):
-            raise VertexError("Invalid vertex.")
+            raise VertexError("ERROR: Invalid vertex.")
 
         for neighbour in self.__outbound_neighbours[vertex]:
             yield neighbour
@@ -54,7 +57,7 @@ class Graph:
         Returns an iterator to the set of (inbound) neighbours of a vertex.
         """
         if not self.is_vertex(vertex):
-            raise VertexError("Invalid vertex.")
+            raise VertexError("ERROR: Invalid vertex.")
 
         for neighbour in self.__inbound_neighbours[vertex]:
             yield neighbour
@@ -63,6 +66,9 @@ class Graph:
         """
         Returns an iterator to the set of edges.
         """
+        if len(self.__cost) == 0:
+            raise EdgeError("ERROR: The graph does not have any edges!")
+
         for key, value in self.__cost.items():
             yield key[0], key[1], value
 
@@ -95,7 +101,7 @@ class Graph:
         Returns the number of edges with the endpoint vertex.
         """
         if vertex not in self.__inbound_neighbours:
-            raise VertexError("The specified vertex does not exist.")
+            raise VertexError("ERROR: The specified vertex does not exist.")
 
         return len(self.__inbound_neighbours[vertex])
 
@@ -104,7 +110,7 @@ class Graph:
         Returns the number of edges with the start point vertex.
         """
         if vertex not in self.__outbound_neighbours:
-            raise VertexError("The specified vertex does not exist.")
+            raise VertexError("ERROR: The specified vertex does not exist.")
 
         return len(self.__outbound_neighbours[vertex])
 
@@ -113,7 +119,7 @@ class Graph:
         Returns the cost of an edge if it exists.
         """
         if (first_vertex, second_vertex) not in self.__cost:
-            raise EdgeError("The specified edge does not exist.")
+            raise EdgeError("ERROR: The specified edge does not exist.")
 
         return self.__cost[(first_vertex, second_vertex)]
 
@@ -122,7 +128,7 @@ class Graph:
         Sets the cost of an edge in the graph if it exists.
         """
         if (first_vertex, second_vertex) not in self.__cost:
-            raise EdgeError("The specified edge does not exist.")
+            raise EdgeError("ERROR: The specified edge does not exist.")
 
         self.__cost[(first_vertex, second_vertex)] = new_cost
 
@@ -131,7 +137,7 @@ class Graph:
         Adds a vertex to the graph.
         """
         if self.is_vertex(vertex):
-            raise VertexError("Cannot add a vertex which already exists.")
+            raise VertexError("ERROR: The specified vertex already exists.")
 
         self.__vertices.add(vertex)
         self.__outbound_neighbours[vertex] = set()
@@ -142,10 +148,10 @@ class Graph:
         Adds an edge to the graph.
         """
         if self.is_edge(first_vertex, second_vertex):
-            raise EdgeError("The specified edge already exists")
+            raise EdgeError("ERROR: The specified edge already exists")
 
         if not self.is_vertex(first_vertex) or not self.is_vertex(second_vertex):
-            raise EdgeError("The vertices on the edge do not exist.")
+            raise EdgeError("ERROR: The vertices on the edge do not exist.")
 
         self.__outbound_neighbours[first_vertex].add(second_vertex)
         self.__inbound_neighbours[second_vertex].add(first_vertex)
@@ -156,7 +162,7 @@ class Graph:
         Removes an edge from the graph.
         """
         if not self.is_edge(first_vertex, second_vertex):
-            raise EdgeError("The specified edge does not exist.")
+            raise EdgeError("ERROR: The specified edge does not exist.")
 
         del self.__cost[(first_vertex, second_vertex)]
 
@@ -168,7 +174,7 @@ class Graph:
         Removes a vertex from the graph.
         """
         if not self.is_vertex(vertex):
-            raise VertexError("Cannot remove a vertex which doesn't exist.")
+            raise VertexError("ERROR: The specified vertex does not exit.")
 
         edges_to_remove_list = []
         for vtx in self.__outbound_neighbours[vertex]:

@@ -6,7 +6,10 @@ using namespace std;
 
 
 PriorityQueue::PriorityQueue(Relation r) {
-	//TODO - Implementation
+    /*
+     * Theta(1)
+     */
+
     this->rel = r;
     this->head = nullptr;
     this->tail = nullptr;
@@ -14,7 +17,12 @@ PriorityQueue::PriorityQueue(Relation r) {
 
 
 void PriorityQueue::push(TElem e, TPriority p) {
-    //TODO - Implementation
+    /*
+     * Best case: Theta(1) -> If head is NULL, if the priority of e is better than the head, or being last elem
+     * Worst case: Theta(n), where n = the number of elements in the queue -> The element is added before the end.
+     * Average case: Theta(n)
+     * Total complexity: O(n)
+     */
     if (this->head == nullptr) {
         node *ptr = new node;
 
@@ -53,10 +61,11 @@ void PriorityQueue::push(TElem e, TPriority p) {
     }
     else {
         node* h = this->head;
-        while(!this->rel(p, h->val.second))
+        while(!this->rel(p, h->val.second)) {
             h = h->next;
+        }
 
-        node* ptr = new node;
+        node *ptr = new node;
         ptr->val = Element(e, p);
 
         ptr->next = h;
@@ -64,13 +73,14 @@ void PriorityQueue::push(TElem e, TPriority p) {
 
         h->prev->next = ptr;
         h->prev = ptr;
-
-
     }
 }
 
 //throws exception if the queue is empty
 Element PriorityQueue::top() const {
+    /*
+     * Theta(1)
+     */
 	//TODO - Implementation
     if(this->isEmpty())
         throw exception();
@@ -79,7 +89,10 @@ Element PriorityQueue::top() const {
 }
 
 Element PriorityQueue::pop() {
-	//TODO - Implementation
+    /*
+     * Theta(1)
+     */
+
     Element e = this->top();
     node* aux = this->head;
     if(this->head->next != nullptr)
@@ -96,16 +109,35 @@ Element PriorityQueue::pop() {
 }
 
 bool PriorityQueue::isEmpty() const {
-	//TODO - Implementation
+	/*
+	 * Theta(1)
+	 */
 	return this->head == nullptr;
 }
 
 
 PriorityQueue::~PriorityQueue() {
+    /*
+     * Theta(n), where n = the number of elements in the queue
+     */
 	while(this->head != nullptr) {
         node* aux = this->head;
         this->head = this->head->next;
         delete aux;
     }
-};
+}
+
+void PriorityQueue::merge(PriorityQueue &pq) {
+    /*
+     * Best case: Theta(n), where n = the number of elements in pq, all elems added at the start or the end
+     * Worst case: Theta(n*m), where n = the number of elements in pq, m = no of elems in this queue, all elems added before the end of the queue
+     * Average case: Theta(n*m)
+     * Total complexity: O(n*m)
+     */
+
+    while(!pq.isEmpty()) {
+        Element e = pq.pop();
+        this->push(e.first, e.second);
+    }
+}
 

@@ -44,4 +44,6 @@ public:
 	//destructor
 	~PriorityQueue();
 
+    void merge(PriorityQueue& pq);
+
 };

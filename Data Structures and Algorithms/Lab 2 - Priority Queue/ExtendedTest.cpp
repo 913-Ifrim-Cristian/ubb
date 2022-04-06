@@ -79,6 +79,7 @@ void testAdd() {
 	}
 	assert(pq.isEmpty() == false);
 
+
 	for (int i = -1000; i <= 1000; i++) {
 		pq.push(i, i);
 	}
@@ -182,6 +183,31 @@ void testQuantity() {//add a lot of elements
 	}
 }
 
+void testMerge() {
+    cout << "Test merge" << endl;
+    PriorityQueue pq(rel2);
+    PriorityQueue pq2(rel2);
+
+    for(int i = 0; i < 20; ++i)
+        pq.push(i, i);
+
+    for(int i = -10; i < 30; ++i)
+        pq2.push(i, i);
+
+    assert(pq.top().first == 0);
+    assert(pq2.top().first == -10);
+
+    pq.merge(pq2);
+
+    assert(pq.top().first == -10);
+    Element e = pq.pop();
+    e = pq.pop();
+    assert(e.first == -9);
+    for(int i = 0; i < 12; ++i) pq.pop();
+    e = pq.pop();
+    assert(e.first == 2);
+}
+
 void testAllExtended() {
 	testCreate();
 	testAdd();
@@ -190,4 +216,5 @@ void testAllExtended() {
 	testMix(rel3);
 	testMix(rel4);
 	testQuantity();
+    testMerge();
 }

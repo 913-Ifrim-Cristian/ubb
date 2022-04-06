@@ -1,5 +1,7 @@
 #include "Matrix.h"
+#include "MatrixIterator.h"
 #include <exception>
+
 using namespace std;
 
 
@@ -165,6 +167,10 @@ void Matrix::removeElem(int i, int j) {
     for(int index = j + 1; index <= this->cols; ++index)
         this->sparseColumn[index]--;
 
+}
+
+MatrixIterator Matrix::iterator(int line) const {
+    return MatrixIterator(*this, line);
 }
 
 

@@ -1,5 +1,6 @@
 #include <assert.h>
 #include "Matrix.h"
+#include "MatrixIterator.h"
 #include "ExtendedTest.h"
 #include <iostream>
 #include <exception>
@@ -75,6 +76,19 @@ void testQuantity() {
 				if (j % 3 == 0)
 					assert(m.element(i, j) == i + j);
 				else assert(m.element(i, j) == NULL_TELEM);
+
+    MatrixIterator it = m.iterator(2);
+    assert(it.getCurrent() == 0);
+    it.next();
+    assert(it.getCurrent() == NULL_TELEM);
+    it.next();
+    assert(it.getCurrent() == 4);
+    it.next();
+    assert(it.getCurrent() == 5);
+    it.next();
+    assert(it.getCurrent() == 8);
+    it.next();
+    assert(it.getCurrent() == NULL_TELEM);
 }
 
 void testExceptions() {

@@ -4,10 +4,14 @@
 typedef int TElem;
 #define NULL_TELEM 0
 
+class MatrixIterator;
+
 class Matrix {
 
+    friend class MatrixIterator;
+
 private:
-	//TODO - Representation
+
     int rows;
     int cols;
     int lineSize;
@@ -40,5 +44,7 @@ public:
 	//returns the previous value from the position
 	//throws exception if (i,j) is not a valid position in the Matrix
 	TElem modify(int i, int j, TElem e);
+
+    MatrixIterator iterator(int i) const;
 
 };

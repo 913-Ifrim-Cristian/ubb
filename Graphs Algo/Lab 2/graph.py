@@ -226,6 +226,14 @@ def write_file(file_name, g):
 
 def shortest_path(g, s, t):
 
+    """
+    Gets the shortest path from a starting vertex to a ending vertex of a given graph
+    :param g: the given graph
+    :param s: starting vertex
+    :param t: ending vertex
+    :return: the list representing the shortest path from starting vertex to ending vertex
+    """
+
     prev = dict()
     prev[s] = None
     q = Queue()

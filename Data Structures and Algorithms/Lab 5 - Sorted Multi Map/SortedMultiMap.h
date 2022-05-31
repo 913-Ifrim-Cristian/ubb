@@ -70,6 +70,8 @@ class SortedMultiMap {
     // returns an iterator for the sorted multimap. The iterator will returns the pairs as required by the relation (given to the constructor)	
     SMMIterator iterator() const;
 
+    void replace(TKey k,TValue oldValue,TValue newValue);
+
     // destructor
     ~SortedMultiMap();
 };

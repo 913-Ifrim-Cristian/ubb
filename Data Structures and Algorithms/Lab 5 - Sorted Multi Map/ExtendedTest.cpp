@@ -249,10 +249,41 @@ void testIterator() {
 	testIterator(desc);
 }
 
+void testReplace(Relation r) {
+
+    cout << "Test replace" << endl;
+    SortedMultiMap smm = SortedMultiMap(r);
+    SMMIterator it = smm.iterator();
+
+    for (int i = 0; i < 20; i++) {
+        smm.add(i, i + 1);
+        if (i%2==0)	{
+            smm.add(i, i + 2);
+        }
+    }
+
+    it.first();
+
+    smm.replace(0, 2, 5);
+    assert(it.getCurrent().first == 0 && it.getCurrent().second == 1);
+    it.next();
+    assert(it.getCurrent().first == 0 && it.getCurrent().second == 5);
+
+    it.next();
+    assert(it.getCurrent().first == 1 && it.getCurrent().second == 2);
+    it.next();
+    assert(it.getCurrent().first == 2 && it.getCurrent().second == 3);
+    smm.replace(2, 3, 5);
+    assert(it.getCurrent().first == 2 && it.getCurrent().second == 5);
+
+
+}
+
 void testAllExtended() {
 	testCreate();
 	testSearch();
 	testRemove();
 	testIterator();
 	testRelations();
+    testReplace(asc);
 }

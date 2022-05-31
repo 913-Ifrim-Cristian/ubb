@@ -3,44 +3,57 @@
 #include <iostream>
 
 SMMIterator::SMMIterator(const SortedMultiMap& d) : map(d){
+    /*
+     * Theta(h), where h -> the height of the tree
+     */
 	currNode = map.head;
     currVal = 0;
+
+    stackHead = nullptr;
+    stackElems = 0;
 
     if(map.isEmpty()) {
         currNode = -1;
         return;
     }
 
-    while (currNode != -1) //while current pos is valid
+    while (currNode != -1)
     {
-        s.push(currNode);
+        addToStack(currNode);
         currNode = map.left[currNode];
-    } //current pos is the left until no more lefts
-    if (!s.empty())
+    }
+    if (stackElems != 0)
     {
-        currNode = s.top();
+        currNode = stackTop();
         currVal = 0;
     }
 }
 
 void SMMIterator::first() {
+    /*
+     * Theta(h), where h -> the height of the tree
+     */
     currNode = map.head;
     currVal = 0;
 
-    s = std::stack<int>();
+    while(stackHead != nullptr) {
+        auto oldNode = stackHead;
+        stackHead = stackHead->next;
+        delete oldNode;
+    }
 
     if (map.isEmpty()) {
         currNode = -1;
         return;
     }
 
-    while (currNode != -1) //while current pos is valid
+    while (currNode != -1)
     {
-        s.push(currNode);
+        addToStack(currNode);
         currNode = map.left[currNode];
-    } //current pos is the left until no more lefts
-    if (!s.empty()) {
-        currNode = s.top();
+    }
+    if (stackElems != 0) {
+        currNode = stackTop();
         currVal = 0;
     } else {
         currNode = -1;
@@ -49,6 +62,12 @@ void SMMIterator::first() {
 }
 
 void SMMIterator::next(){
+    /*
+     * BC: Theta(1)
+     * WC: Theta(h) -> where h is the height of the tree
+     * AC: Theta(h)
+     * Total: O(h)
+     */
     if (!valid())
         throw exception();
 
@@ -56,19 +75,19 @@ void SMMIterator::next(){
         return;
     }
 
-    int node = s.top();
-    s.pop();
+    int node = stackTop();
+    popFromStack();
 
     if(map.right[node] != -1) {
         node = map.right[node];
         while(node != -1) {
-            s.push(node);
+            addToStack(node);
             node = map.left[node];
         }
     }
 
-    if(!s.empty()) {
-        currNode = s.top();
+    if(stackElems != 0) {
+        currNode = stackTop();
     }
     else {
         currNode = -1;
@@ -78,11 +97,17 @@ void SMMIterator::next(){
 }
 
 bool SMMIterator::valid() const {
+    /*
+     * Theta(1)
+     */
 
     return currNode != -1;
 }
 
 TElem SMMIterator::getCurrent() const{
+    /*
+     * Theta(1)
+     */
 
     if (!valid())
         throw exception();
@@ -92,6 +117,36 @@ TElem SMMIterator::getCurrent() const{
     elem.second = map.data[currNode].elems[currVal];
     return elem;
 
+}
+
+void SMMIterator::addToStack(int e) {
+
+    if(stackHead == nullptr) {
+        Node* newNode = new Node;
+        newNode->el = e;
+        newNode->next = nullptr;
+        stackHead = newNode;
+        stackElems = 1;
+        return;
+    }
+
+    Node* newNode = new Node;
+    newNode->el = e;
+    newNode->next = stackHead;
+    stackHead = newNode;
+    stackElems++;
+}
+
+void SMMIterator::popFromStack() {
+    auto old = stackHead;
+    stackHead = stackHead->next;
+    stackElems--;
+
+    delete old;
+}
+
+int SMMIterator::stackTop() {
+    return stackHead->el;
 }
 
 

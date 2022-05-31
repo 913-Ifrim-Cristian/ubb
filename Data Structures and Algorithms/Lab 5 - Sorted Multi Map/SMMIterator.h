@@ -11,7 +11,18 @@ private:
 	const SortedMultiMap& map;
 	SMMIterator(const SortedMultiMap& map);
 
-    std::stack<int> s;
+    struct Node {
+        int el;
+        Node* next;
+    };
+
+    Node* stackHead;
+    int stackElems;
+    void addToStack(int e);
+    void popFromStack();
+    int stackTop();
+
+
     int currNode;
     int currVal;
 

@@ -31,7 +31,7 @@ Write an application allowing you to see the weather for the current day. Each T
 
 18;21;20;68;rainy
 
-Write a weather application using C++ with a **graphical user interface(use the Qt framework)* which allows to:
+Write a weather application using C++ with a **graphical user interface(use the Qt framework)** which allows to:
 1. Visualize all time intervals in a list (QListWidget or QListView). The list will display the time interval, the temperature, the precipitation probability and the description. When the application starts, the list is populated automatically **(2.5p)** and the time intervals are sorted in ascending order **(1p)**.
 2. Filter the list according to precipitation probability. The list will present the time intervals where the precipitation probability is less than a given value. Input the value in a QLineEdit. **(2p)**
 3. Compute the total number of hours, for a given description and start time(e.g. "sunny" - how many hours of sunny weather will there be today after 14 o'clock?). Input the description and start time in QLineEdits and when the button "Compute total" is clicked, show the total number of hours for that description after the given start time (in a QLineEdit, a QLabel or in a new widget)**(2.5p)**. Show an error message if there are no such intervals **(1p)**.

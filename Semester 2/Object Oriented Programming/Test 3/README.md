@@ -22,9 +22,13 @@ Time: 60 minutes.
 Write an application allowing you to see the weather for the current day. Each Time Interval is represented by *its hours (start and end), temperature, precipitation probability and a short description*(e.g. "sunny", "rainy", "cloudy"). Create a file that contains at leat 5 time intervals. The application will read data from the file. See below a few examples.
 
 6;9;10;13;foggy
+
 9;12;13;7;cloudy
+
 12;14;18;23;sunny
+
 14;18;20;52;sunny
+
 18;21;20;68;rainy
 
 Write a weather application using C++ with a **graphical user interface(use the Qt framework)* which allows to:

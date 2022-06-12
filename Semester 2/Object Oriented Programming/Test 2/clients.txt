@@ -1,0 +1,4 @@
+Person: Aurel, income: 1900.500000, total income: 1900.500000
+Person: Cristi, income: 6000.200000, total income: 6000.200000
+Company: OIL COMPANY, income: 190000.700000, Money from investments: 50000.200000, total income: 240000.900000
+Company: IT COMPANY, income: 80520.200000, Money from investments: 91252.300000, total income: 171772.500000

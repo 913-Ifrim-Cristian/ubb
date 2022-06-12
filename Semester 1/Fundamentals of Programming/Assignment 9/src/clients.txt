@@ -1,0 +1,15 @@
+0, Lucas Ceausescu, 0, 13
+1, Asher Mocanu, 0, 0
+2, Luke Seagal, 0, 22
+3, Theodore Gheorghidiu, 0, 66
+4, Roman Pinkman, 0, 0
+5, Caleb Pena, 1, 25
+6, Joseph Peste, 0, 65
+7, Santiago Dogg, 0, 6
+8, Aaron Cioata, 0, 0
+9, Michael Bravo, 0, 39
+10, Jayden Avram, 0, 0
+11, Owen Vijelie, 0, 0
+12, Andrew Lipan, 0, 0
+13, Julian Shelby, 0, 0
+14, Client, 0, 0

@@ -1,0 +1,9 @@
+# ninja log v5
+66	589	6709304585355862	CMakeFiles/Lab_1___CSC_Matrix.dir/MatrixIterator.cpp.obj	c87c04c799a8a346
+59	592	6709304585355862	CMakeFiles/Lab_1___CSC_Matrix.dir/ShortTest.cpp.obj	45e82825d7d2f4f9
+74	593	6709304585395858	CMakeFiles/Lab_1___CSC_Matrix.dir/Matrix.cpp.obj	a5e5d0ef5492f913
+0	973	6709304589216776	CMakeFiles/Lab_1___CSC_Matrix.dir/App.cpp.obj	62c3f175e2dbcfa9
+51	1022	6709304589736736	CMakeFiles/Lab_1___CSC_Matrix.dir/ExtendedTest.cpp.obj	17f42fb2fbcf4681
+1022	1706	6709304596516802	Lab_1___CSC_Matrix.exe	19282404b9b0bc6
+6	683	6709305010977432	CMakeFiles/Lab_1___CSC_Matrix.dir/ExtendedTest.cpp.obj	17f42fb2fbcf4681
+691	900	6709305013107495	Lab_1___CSC_Matrix.exe	19282404b9b0bc6

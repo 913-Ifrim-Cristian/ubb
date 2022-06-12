@@ -1,0 +1,86 @@
+{
+  "0": {
+    "_Client__clientID": 0,
+    "_Client__name": "Jack Mocanu",
+    "_Client__activeRental": false,
+    "_Client__daysRented": 25
+  },
+  "1": {
+    "_Client__clientID": 1,
+    "_Client__name": "Josiah Rebreanu",
+    "_Client__activeRental": false,
+    "_Client__daysRented": 13
+  },
+  "2": {
+    "_Client__clientID": 2,
+    "_Client__name": "Luca Cioata",
+    "_Client__activeRental": false,
+    "_Client__daysRented": 39
+  },
+  "3": {
+    "_Client__clientID": 3,
+    "_Client__name": "Jacob Ironside",
+    "_Client__activeRental": false,
+    "_Client__daysRented": 57
+  },
+  "4": {
+    "_Client__clientID": 4,
+    "_Client__name": "Grayson Gray",
+    "_Client__activeRental": false,
+    "_Client__daysRented": 11
+  },
+  "5": {
+    "_Client__clientID": 5,
+    "_Client__name": "Leo Breslin",
+    "_Client__activeRental": true,
+    "_Client__daysRented": 28
+  },
+  "6": {
+    "_Client__clientID": 6,
+    "_Client__name": "Anthony Muller",
+    "_Client__activeRental": false,
+    "_Client__daysRented": 30
+  },
+  "7": {
+    "_Client__clientID": 7,
+    "_Client__name": "Grayson Vijelie",
+    "_Client__activeRental": false,
+    "_Client__daysRented": 49
+  },
+  "8": {
+    "_Client__clientID": 8,
+    "_Client__name": "Jack Iliescu",
+    "_Client__activeRental": false,
+    "_Client__daysRented": 0
+  },
+  "9": {
+    "_Client__clientID": 9,
+    "_Client__name": "Colton Williamson",
+    "_Client__activeRental": false,
+    "_Client__daysRented": 0
+  },
+  "10": {
+    "_Client__clientID": 10,
+    "_Client__name": "Gabriel Iliescu",
+    "_Client__activeRental": false,
+    "_Client__daysRented": 0
+  },
+  "11": {
+    "_Client__clientID": 11,
+    "_Client__name": "Nolan Lothbrok",
+    "_Client__activeRental": false,
+    "_Client__daysRented": 0
+  },
+  "12": {
+    "_Client__clientID": 12,
+    "_Client__name": "Anthony Sadoveanu",
+    "_Client__activeRental": false,
+    "_Client__daysRented": 0
+  },
+  "13": {
+    "_Client__clientID": 13,
+    "_Client__name": "Jacob Seagal",
+    "_Client__activeRental": false,
+    "_Client__daysRented": 0
+  }
+}

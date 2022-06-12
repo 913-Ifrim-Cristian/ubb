@@ -1,0 +1,10 @@
+Lucki,Caucasian,1,https://upload.wikimedia.org/wikipedia/commons/thumb/0/0b/Owczarek_kaukaski_65556.jpg/330px-Owczarek_kaukaski_65556.jpg
+Mex,Unknown,8,https://www.bucuriacasei.ro/wp-content/uploads/2021/03/border-collie-de-vanzare.jpg
+Rex,Golden Retriever,2,https://upload.wikimedia.org/wikipedia/commons/thumb/d/d6/Golden_retriever-035.JPG/437px-Golden_retriever-035.JPG
+Lupu,German Sheperd,1,https://upload.wikimedia.org/wikipedia/commons/0/0c/Deutscher_Sch%C3%A4ferhund-_portrait.JPG
+Lulu,Beagle,5,http://www.animalepierdute.ro/wp-content/uploads/2019/06/Beagle-1024x683.jpg
+Martin,Saint Bernard,3,http://www.monitoruldegalati.ro/media/k2/items/cache/6977e3569c5e82f8351ef994769758f5_XL.jpg
+Natasha,Pitbull,2,https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Staffordshire_Bull_Terrier_600.jpg/330px-Staffordshire_Bull_Terrier_600.jpg
+Katyusha,Doberman,4,https://static4.libertatea.ro/wp-content/uploads/2020/09/doberman-caracteristici-si-temperament--cum-se-dreseaza-un-animal-de-companie.jpg
+Relu,Labrador,2,http://www.taramulanimalelor.com/wp-content/uploads/2020/10/Labrador-caracteristici-rasa-caine.jpg
+Ursu,Pug,4,http://www.animalepierdute.ro/wp-content/uploads/2019/09/mops-pugjpg.jpg

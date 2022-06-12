@@ -1,0 +1,100 @@
+{
+  "0": {
+    "_Book__bookID": 0,
+    "_Book__title": "Trust That Idiot",
+    "_Book__author": "Asher Arellano Felix",
+    "_Book__isAvailable": true,
+    "_Book__rentNumber": 2
+  },
+  "1": {
+    "_Book__bookID": 1,
+    "_Book__title": "Visitors Without Time",
+    "_Book__author": "Joshua Sadoveanu",
+    "_Book__isAvailable": true,
+    "_Book__rentNumber": 0
+  },
+  "2": {
+    "_Book__bookID": 2,
+    "_Book__title": "Soldier And Girl",
+    "_Book__author": "Alexander Mocanu",
+    "_Book__isAvailable": true,
+    "_Book__rentNumber": 2
+  },
+  "3": {
+    "_Book__bookID": 3,
+    "_Book__title": "Girls With Black Hair",
+    "_Book__author": "Samuel Peste",
+    "_Book__isAvailable": true,
+    "_Book__rentNumber": 1
+  },
+  "4": {
+    "_Book__bookID": 4,
+    "_Book__title": "Songs Of The Wife",
+    "_Book__author": "Jayden Ceausescu",
+    "_Book__isAvailable": true,
+    "_Book__rentNumber": 2
+  },
+  "5": {
+    "_Book__bookID": 5,
+    "_Book__title": "Boy In The Mountain",
+    "_Book__author": "Julian Dicky",
+    "_Book__isAvailable": true,
+    "_Book__rentNumber": 1
+  },
+  "6": {
+    "_Book__bookID": 6,
+    "_Book__title": "Admiring Lust",
+    "_Book__author": "Roman Pinkman",
+    "_Book__isAvailable": false,
+    "_Book__rentNumber": 3
+  },
+  "7": {
+    "_Book__bookID": 7,
+    "_Book__title": "Scientists And Boys",
+    "_Book__author": "Hudson Iliescu",
+    "_Book__isAvailable": true,
+    "_Book__rentNumber": 2
+  },
+  "8": {
+    "_Book__bookID": 8,
+    "_Book__title": "Wifes And Angels",
+    "_Book__author": "Elijah Williamson",
+    "_Book__isAvailable": true,
+    "_Book__rentNumber": 1
+  },
+  "9": {
+    "_Book__bookID": 9,
+    "_Book__title": "Knight Makeover",
+    "_Book__author": "Gabriel Shelby",
+    "_Book__isAvailable": true,
+    "_Book__rentNumber": 2
+  },
+  "10": {
+    "_Book__bookID": 10,
+    "_Book__title": "Descendant Of Last Rites",
+    "_Book__author": "Lucas Pena",
+    "_Book__isAvailable": true,
+    "_Book__rentNumber": 0
+  },
+  "11": {
+    "_Book__bookID": 11,
+    "_Book__title": "Men And Suitors",
+    "_Book__author": "Jayden Peste",
+    "_Book__isAvailable": true,
+    "_Book__rentNumber": 0
+  },
+  "12": {
+    "_Book__bookID": 12,
+    "_Book__title": "Disruption In The River",
+    "_Book__author": "Santiago Hammond",
+    "_Book__isAvailable": true,
+    "_Book__rentNumber": 0
+  },
+  "13": {
+    "_Book__bookID": 13,
+    "_Book__title": "Sounds Of The Shadows",
+    "_Book__author": "Roman Lothbrok",
+    "_Book__isAvailable": true,
+    "_Book__rentNumber": 0
+  }
+}

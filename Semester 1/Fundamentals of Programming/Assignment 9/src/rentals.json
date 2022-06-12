@@ -1,0 +1,114 @@
+{
+  "0": {
+    "_Rental__rentID": 0,
+    "_Rental__client": 4,
+    "_Rental__book": 5,
+    "_Rental__rentDate": "2020-04-21",
+    "_Rental__returnDate": "2020-05-02"
+  },
+  "1": {
+    "_Rental__rentID": 1,
+    "_Rental__client": 7,
+    "_Rental__book": 3,
+    "_Rental__rentDate": "2020-12-16",
+    "_Rental__returnDate": "2021-01-13"
+  },
+  "2": {
+    "_Rental__rentID": 2,
+    "_Rental__client": 2,
+    "_Rental__book": 4,
+    "_Rental__rentDate": "2021-03-11",
+    "_Rental__returnDate": "2021-03-30"
+  },
+  "3": {
+    "_Rental__rentID": 3,
+    "_Rental__client": 6,
+    "_Rental__book": 2,
+    "_Rental__rentDate": "2020-07-22",
+    "_Rental__returnDate": "2020-08-03"
+  },
+  "4": {
+    "_Rental__rentID": 4,
+    "_Rental__client": 3,
+    "_Rental__book": 0,
+    "_Rental__rentDate": "2020-02-13",
+    "_Rental__returnDate": "2020-03-12"
+  },
+  "5": {
+    "_Rental__rentID": 5,
+    "_Rental__client": 0,
+    "_Rental__book": 2,
+    "_Rental__rentDate": "2020-02-21",
+    "_Rental__returnDate": "2020-03-12"
+  },
+  "6": {
+    "_Rental__rentID": 6,
+    "_Rental__client": 2,
+    "_Rental__book": 9,
+    "_Rental__rentDate": "2020-10-14",
+    "_Rental__returnDate": "2020-11-04"
+  },
+  "7": {
+    "_Rental__rentID": 7,
+    "_Rental__client": 7,
+    "_Rental__book": 6,
+    "_Rental__rentDate": "2020-03-09",
+    "_Rental__returnDate": "2020-03-18"
+  },
+  "8": {
+    "_Rental__rentID": 8,
+    "_Rental__client": 5,
+    "_Rental__book": 7,
+    "_Rental__rentDate": "2020-11-24",
+    "_Rental__returnDate": "2020-12-22"
+  },
+  "9": {
+    "_Rental__rentID": 9,
+    "_Rental__client": 1,
+    "_Rental__book": 8,
+    "_Rental__rentDate": "2020-09-09",
+    "_Rental__returnDate": "2020-09-22"
+  },
+  "10": {
+    "_Rental__rentID": 10,
+    "_Rental__client": 7,
+    "_Rental__book": 0,
+    "_Rental__rentDate": "2020-11-14",
+    "_Rental__returnDate": "2020-11-26"
+  },
+  "11": {
+    "_Rental__rentID": 11,
+    "_Rental__client": 6,
+    "_Rental__book": 6,
+    "_Rental__rentDate": "2021-02-13",
+    "_Rental__returnDate": "2021-03-03"
+  },
+  "12": {
+    "_Rental__rentID": 12,
+    "_Rental__client": 3,
+    "_Rental__book": 4,
+    "_Rental__rentDate": "2020-05-26",
+    "_Rental__returnDate": "2020-06-24"
+  },
+  "13": {
+    "_Rental__rentID": 13,
+    "_Rental__client": 0,
+    "_Rental__book": 7,
+    "_Rental__rentDate": "2020-05-08",
+    "_Rental__returnDate": "2020-05-13"
+  },
+  "14": {
+    "_Rental__rentID": 14,
+    "_Rental__client": 9,
+    "_Rental__book": 9,
+    "_Rental__rentDate": "2021-12-15",
+    "_Rental__returnDate": "2021-12-15"
+  },
+  "15": {
+    "_Rental__rentID": 15,
+    "_Rental__client": 5,
+    "_Rental__book": 6,
+    "_Rental__rentDate": "2021-12-15",
+    "_Rental__returnDate": "0001-01-01"
+  }
+}

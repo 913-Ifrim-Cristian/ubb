@@ -45,4 +45,5 @@ public:
 	~PriorityQueue();
 
     void merge(PriorityQueue& pq);
+
 };

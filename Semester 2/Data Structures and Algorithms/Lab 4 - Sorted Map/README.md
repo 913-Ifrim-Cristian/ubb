@@ -1,5 +1,7 @@
-### Laboratory 0 - Fixed Capacity BiMap
+### Laboratory 4 - Sorted Map
 
 ---
 
-This ADT was a demo and a tutorial made by our teacher to accommodate with what we had to do for the following laboratories.
+Given the interface of a Sorted Map, I had to implement the ADT using a hashtable with the separate chaining collision resolution method.
+
+

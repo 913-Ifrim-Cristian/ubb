@@ -206,8 +206,6 @@ void testMerge() {
     for(int i = 0; i < 12; ++i) pq.pop();
     e = pq.pop();
     assert(e.first == 2);
-
-    assert(pq2.isEmpty() == true);
 }
 
 void testAllExtended() {
